@@ -1,0 +1,381 @@
+@import url(./font.css);
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-item {
+    font-family: "Inter";
+}
+
+.btn {
+    font-family: "Sen";
+}
+
+.btn:hover {
+    background-color: rgb(145, 168, 186);
+    border: none;
+    transition: background-color 0.5s;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-nav {
+        background-color: #6d6e76;
+        padding: 15px 30px;
+        height: 650px;
+    }
+    .nav-item {
+        font-size: 30px;
+    }
+}
+
+.header {
+    background-image: url(../images/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.header__p {
+    font-family: "Inter";
+    letter-spacing: 3px;
+}
+
+.header__title {
+    font-size: 58px;
+    max-width: 803px;
+    font-family: "Sen";
+}
+
+.header__text {
+    font-family: "Inter";
+    line-height: 30px;
+    max-width: 600px;
+}
+
+
+/* section*/
+
+.section__title {
+    font-family: "Sen";
+    margin-top: 100px;
+}
+
+.section-card-img {
+    max-width: 400px;
+    height: 250px;
+}
+
+.section-card-img:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.card-body-title,
+.card-body-text {
+    max-width: 370px;
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+.forSpans {
+    max-width: 400px;
+}
+
+.card-body-text {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1210px) {
+    .section-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-card-img {
+        max-width: 1000px;
+        width: 100%;
+        height: 450px;
+    }
+    .section-card-img:hover {
+        transform: rotate(0);
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+    .cardbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-body-title,
+    .card-body-author,
+    .card-body-text {
+        max-width: 1000px;
+    }
+}
+
+
+/* section2*/
+
+.section2_card:hover {
+    background-color: #ffd050;
+}
+
+.card_img {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.section2_card {
+    max-width: 20rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .section__title {
+        margin: 30px 0;
+    }
+    .section2_elements {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .header {
+        padding-top: 30px;
+        height: 110vh;
+    }
+    .header__title {
+        font-size: 38px;
+        max-width: 603px;
+    }
+    .section2_elements {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    .section2_card {
+        max-width: 385px;
+        width: 100%;
+    }
+    .card {
+        max-width: 100%;
+    }
+}
+
+
+/* Footer*/
+
+.footer {
+    background-color: #232536;
+    height: 165px;
+}
+
+.footer-img:hover {
+    background-color: #ffd050;
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        height: 280px;
+    }
+    .socialApp {
+        margin-top: 40px;
+    }
+}
+
+
+/********** Category ***************/
+
+.headerCategory {
+    background-color: #f4f0f8;
+    height: 350px;
+    max-width: 100%;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+
+/*///////////////////////       All Posts  //////////////////// */
+
+.headerPost {
+    padding-top: 100px;
+    background-color: #f4f0f8;
+    height: 600px;
+    max-width: 100%;
+}
+
+.sectionPosts_card {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sectionPosts_card-img {
+    max-width: 548px;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+.businessText_author {
+    color: rgb(0, 157, 255);
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.businessText_title {
+    text-align: center;
+    color: #232536;
+    font-weight: 700;
+    font-family: "Sen";
+    max-width: 673px;
+}
+
+.businessText_content {
+    text-align: center;
+    color: #6d6e76;
+    font-family: "Inter";
+    max-width: 696px;
+}
+
+@media screen and (max-width: 880px) {
+    .sectionPosts_card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .sectionPosts_card-img {
+        max-width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .headerPost {
+        height: 980px;
+    }
+    .rightImg {
+        margin-top: 30px;
+    }
+    .form-control {
+        margin-top: 120px;
+    }
+    .businessText_author {
+        max-width: 300;
+        font-size: 16px;
+    }
+    .businessText_title {
+        font-size: 30px;
+        max-width: 300px;
+    }
+    .businessText_content {
+        font-size: 16px;
+        max-width: 300px;
+    }
+}
+
+
+/*/////////////// Blog Post //////////////*/
+
+.headerBlog {
+    background-image: url(../images/blog-header-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.sectionBlog-input {
+    max-width: 600px;
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .form-input {
+        margin-top: 10px;
+    }
+}
+
+
+/*/////////////////// Regirtr //////////////*/
+
+.headerRegistr {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.formRegistr {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-validation.success input {
+    border-color: rgb(74, 185, 13);
+}
+
+.form-validation.error input {
+    border-color: red;
+}
+
+.form-validation span {
+    color: rgb(182, 36, 36);
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+.form-validation.error span {
+    visibility: visible;
+}
