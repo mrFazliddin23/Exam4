@@ -17,13 +17,18 @@ button.addEventListener("click", (e) => {
     const text = textTextArea.value;
 
     const resultDiv = document.createElement('div');
-    resultDiv.innerHTML = `
-    <span>$ First Name: {firstName}</span>
-    <p>$ Last Name: {lastName}</p>
-    <p>$ Add time: {addTime}</p>
-    <h3>$ Title: {title}</h3>
-    <p>$ Text: {text}</p>
-    `;
+    if(firstName == '' || lastName == '' || addTime == '' || title == '' || text == ''){
+        alert('Warning: you must fill in the inputs and submit');
+    }
+    else{
+        resultDiv.innerHTML = `
+        <h3>${title}</h3>
+        <p>${addTime}</p>
+        <span>${firstName}</span>
+        <p>${lastName}</p>
+        <p>${text}</p>
+        `;
+    }
 
     result.appendChild(resultDiv);
     form.reset();

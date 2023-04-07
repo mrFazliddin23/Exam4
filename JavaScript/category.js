@@ -8,7 +8,6 @@ async function businessFun() {
     if (search) {
         url = `https://newsapi.org/v2/everything?q=${search}&apiKey=${myApi}`;
 
-        console.log(url);
     } else {
         url = `https://newsapi.org/v2/everything?q=business&apiKey=${myApi}`;
     }
